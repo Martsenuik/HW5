@@ -7,14 +7,26 @@
   </head>
   <body>
     <!----------------------------- завдання 1 --------------------------->
-    <select name="select">
-      <option value="choice" selected>зробіть ваш вибір</option>
-      <option value="coffee">кава</option>
-      <option value="tea">чай</option>
-      <option value="juice">сік</option>
-    </select>
 
-    <!----------------------------- завдання 2 --------------------------->
+    <form>
+      <label>
+        оберіть напій
+        <select name="select" class="choice-drink">
+          <option value="value" selected>зробіть ваш вибір</option>
+          <option value="coffee">кава</option>
+          <option value="tea">чай</option>
+          <option value="juice">сік</option>
+        </select>
+      </label>
+    </form>
+    <p class="text"></p>
+    <!----------------------------- завдання 5 --------------------------->
+
+    <form>
+      <input type="text" id="input-color" placeholder="напиши колір" />
+      <button type="submit">жмакни!</button>
+    </form>
+    <p class="color"></p>
 
     <!----------------------------- підключення --------------------------->
     <script src="./js/index.js"></script>
