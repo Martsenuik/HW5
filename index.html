@@ -20,13 +20,64 @@
       </label>
     </form>
     <p class="text"></p>
+    <!----------------------------- завдання 2 --------------------------->
+
+    <h2>Перевірка дня тижня</h2>
+
+    <label for="dayInput">Введіть день тижня:</label>
+    <input type="text" id="dayInput" placeholder="Напишіть день тижня" />
+    <button onclick="checkDay()">Перевірити</button>
+
+    <p id="message"></p>
+
+    <!----------------------------- завдання 3 --------------------------->
+
+    <h1>Визначення пори року</h1>
+    <label for="monthInput">Введіть номер місяця (1-12):</label>
+    <input type="number" id="monthInput" min="1" max="12" />
+    <button onclick="getSeason()">Дізнатися пору року</button>
+    <p id="output"></p>
+
+    <!----------------------------- завдання 4 --------------------------->
+
+    <h1>Кількість днів у місяці</h1>
+    <label for="monthInput">Введіть номер місяця (1-12):</label>
+    <input type="number" id="monthInput" min="1" max="12" />
+    <button onclick="getDaysInMonth()">Дізнатися кількість днів</button>
+    <p id="output"></p>
     <!----------------------------- завдання 5 --------------------------->
 
-    <form>
-      <input type="text" id="input-color" placeholder="напиши колір" />
-      <button type="submit">жмакни!</button>
-    </form>
-    <p class="color"></p>
+    <h2>Введіть колір</h2>
+    <input
+      type="text"
+      id="colorInput"
+      placeholder="Введіть колір (червоний, зелений, жовтий)"
+    />
+    <button onclick="checkColor()">Перевірити</button>
+
+    <p id="message"></p>
+
+    <!----------------------------- завдання 6 --------------------------->
+
+    <h2>Простий калькулятор</h2>
+
+    <label for="num1">Число 1:</label>
+    <input type="number" id="num1" placeholder="Введіть перше число" />
+
+    <label for="num2">Число 2:</label>
+    <input type="number" id="num2" placeholder="Введіть друге число" />
+
+    <label for="operation">Операція:</label>
+    <select id="operation">
+      <option value="+">+</option>
+      <option value="-">-</option>
+      <option value="*">*</option>
+      <option value="/">/</option>
+    </select>
+
+    <button onclick="calculate()">Обчислити</button>
+
+    <p id="result"></p>
 
     <!----------------------------- підключення --------------------------->
     <script src="./js/index.js"></script>
